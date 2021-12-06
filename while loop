@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+int main()
+{
+    int a=1;
+    while(a<=60)
+    {
+         a;a++;
+         
+         printf("\t%d",a);
+    }
+}
+
