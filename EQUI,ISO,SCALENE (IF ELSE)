@@ -1,0 +1,24 @@
+#include<stdio.h>
+
+int main()
+{
+    int a,b,c;
+    
+    printf("enter the values of 3 sides of a triangle");
+    scanf("%d %d %d", &a,&b,&c);
+    
+    if(a==b && b==c && c==a)
+    {
+        printf("it is equilateral");
+    }
+    else if(a==b || b==c || c==a)
+    {
+        printf("it is isoceles triangle");
+    }
+    else
+    {
+        printf("it is scalen triangle");
+    }
+    
+    return 0;
+}
