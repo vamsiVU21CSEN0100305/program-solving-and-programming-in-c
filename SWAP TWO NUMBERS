@@ -1,0 +1,25 @@
+#include <stdio.h>
+
+ int main()
+{
+    int a, b, c;
+    printf("enter a value of A:");
+    scanf("%d",&a);
+    
+    printf("enter a value of B:");
+    scanf("%d", &b);
+    printf("before swapping \n");
+    printf("A = %d B = %d \n",a,b);
+    
+    //swapping using a temporary variable
+    c=a;
+    a=b;
+    b=c;
+    
+    printf("after swapping \n");
+    printf("A = %d B = %d \n",a,b);
+    
+    
+    
+    return 0;
+}
