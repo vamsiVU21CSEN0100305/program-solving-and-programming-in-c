@@ -1,0 +1,44 @@
+#include<stdio.h>
+int main()
+{
+    int i,j,number,alph,ch;
+    printf("enter number of rows and columns:");
+    scanf("%d",&number);
+    printf("choice");
+    scanf("%d",&ch);
+    switch(ch)
+    {
+        case 1:
+        for(i=1;i<=no;i++)
+        {
+            for(j=1;j<=i;j++)
+            {
+                printf("* ");
+            }
+            printf("\n");
+        }
+        break;
+        case 2:
+        for(i=1;i<=number;i++)
+        {
+            for(j=1;j<=i;j++){
+        alph=j+64;
+        printf("%c",alph);
+        }
+        printf("\n");
+        }
+    break;
+    case 3:
+    for(i=1;i<=number;i++)
+    {
+        for(j=1;j<=i;j++)
+        {
+            printf("%d",j);
+        }
+        printf("\n");}
+        break;
+        default:
+        printf("enter you choice from 1 to 3");
+}
+return 0;
+}
