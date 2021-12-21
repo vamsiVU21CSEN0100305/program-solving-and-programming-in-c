@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+    int firstterm,secondterm,nextterm,i=3,n;
+    printf("enter the first and second term");
+    scanf("%d%d",&firstterm,&secondterm);
+    printf("enter number of terms");
+    scanf("%d",&n);
+    printf("%d%d",firstterm,secondterm);
+    for(i=3;i<=n;i++)
+    {
+        nextterm=firstterm+secondterm;
+        printf("\n%d",nextterm);
+        firstterm=secondterm;
+        secondterm=nextterm;
+        nextterm=nextterm=secondterm;
+    }
+
+    return 0;
+}
