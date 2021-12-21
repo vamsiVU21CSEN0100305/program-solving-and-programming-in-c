@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main()
+{
+     int a, b;
+     float t;
+     
+     printf("enter the values of distance and speed:");
+     scanf("%d %d",&a, &b);
+     
+     t=a/b;
+     printf("the value of t is %f",t);
+     
+     return 0;
+}
