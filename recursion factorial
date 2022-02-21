@@ -1,0 +1,21 @@
+#include<stdio.h>
+int recursion(int num)
+{
+    if(num==0)
+    {
+        return 1;
+    }
+    else
+    {
+        return num*recursion(num-1);
+    }
+}
+int main()
+{
+    int a,b;
+    printf("enter the value of the number ");
+    scanf("%d",&a);
+    b=recursion(a);
+    printf("%d",b);
+    return 0;
+}
