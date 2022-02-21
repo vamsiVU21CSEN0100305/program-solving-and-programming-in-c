@@ -1,0 +1,26 @@
+#include<string.h>
+union voter
+{
+    int age;
+    char name[20];
+}find;
+int main()
+{
+    
+
+    printf("enter voter no 1 details");
+    scanf("\n%d",&find.age);
+    printf("\nvoter 1 age =%d",find.age);
+    printf("\n enter voter name");
+    scanf("\n%s",find.name);
+    printf("\n%s",find.name); 
+    // voter 2
+    printf("\nenter voter no 2 details");
+    scanf("\n%d",&find.age);
+    printf("\nvoter 2 age =%d",find.age);
+    printf("\n enter voter name");
+    scanf("\n%s",find.name);
+    printf("\n%s",find.name); 
+    
+    return 0;
+}
