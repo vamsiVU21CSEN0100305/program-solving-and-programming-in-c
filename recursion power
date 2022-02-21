@@ -1,0 +1,24 @@
+#include<stdio.h>
+#include<math.h>
+int power(int a,int b)
+{
+    if(a!=0)
+    {
+        return b*pow(b,a-1);
+    }
+    else if(a==0)
+    {
+        return 1;
+    }
+}
+int main()
+{
+    int i,j;
+    printf("enter the number you want to find power for");
+    scanf("%d",&i);
+    printf("enter the power u wanyt to get the val,ues of the number for ");
+    scanf("%d",&j);
+    printf("%d",power(j,i));
+    return 0;
+    
+}
