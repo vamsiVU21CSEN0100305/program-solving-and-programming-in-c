@@ -1,0 +1,58 @@
+#include <stdio.h>
+#include<math.h>
+int prime(int i){
+    int j,c=0;
+    for(j=1;j<=i;j++)
+    {
+        if(i%j==0){
+        
+        c++;}
+    }
+    
+    if(c==2){
+        printf("Number %d is prime.",i);
+     }
+     else{
+        printf("Number %d is not a prime number.",i);
+    }
+}
+
+int armstrong(int num){
+    int i,j,sum,temp;
+    temp=num;
+    while(temp>=1){
+        i=temp%10;
+        j=pow(i,3);
+        sum=sum+j;
+        temp=temp/10;
+    }
+    if (sum==num){
+        printf("Number %d is armstrong.",num);
+    }
+    else{
+        printf("Number %d is not armstrong",num);
+    }
+}
+int perfnum(int n){
+    int b,a=0;
+    if (n%2==0){
+        for (b=n/2;b>=1;b--){
+            if (n%b==0){
+                a+=b;
+            }
+        }
+    }
+    if (n==a){
+        printf("%d is a perfect number.",n);
+    }
+    else{
+        printf("%d is not a perfect number.",n);
+    }
+}
+int main(){
+    int inputnum;
+    printf("Enter a number -> "); scanf("%d",&inputnum);
+    prime(inputnum); printf("\n");
+    armstrong(inputnum); printf("\n");
+    perfnum(inputnum); printf("\n");
+}
